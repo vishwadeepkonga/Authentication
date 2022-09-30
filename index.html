@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="#" id="home-link" onclick="home_page()">Home</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" 
+            id="signup-link" onclick="signup_page()">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page"  href="#"
+            id="login-link" onclick="login_page()">Login</a>
+          </li>
+         </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+<div class="">
+  <div class=" section-1  col-md-6 col-sm-12 col-lg-12 " id="homepage">
+    <img src="https://b.zmtcdn.com/mx-onboarding-hero87f77501659a5656cad54d98e72bf0d81627911821.webp" alt="">
+    <div class="zomatoimg">
+      <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+    </div>
+    <div class="para">
+      <p >Discover the best food & drinks in Hyderabad</p>          
+
+    </div>
+    <footer class="footer ">
+      <div class="footer-content">
+        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. .</p>
+        <p>All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved</p> 
+
+      </div>
+      </footer>
+
+    </div>
+
+      
+
+
+  </div>
+
+</div>
+
+    
+    <!-------------------------------------------------------------sign-up------------------------------------------------------->
+    <div id="signuppage">
+      <div  class="forms ">
+        <form class="row g-3 registration-form" id="registration-form">
+          <div class="col-md-6 position-relative">
+            <label for="firstname" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstname" value="" required autocomplete="off" onkeyup="">
+            <div class="valid-tooltip" id="valid-firstname">
+              Looks good!
+            </div>
+            <div class="valid-tooltip" id="invalid-firstname">
+              please enter valid name
+            </div>
+
+          </div>
+          <div class="col-md-6 position-relative">
+            <label for="lastname" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastname" value="" required autocomplete="off">
+            <div id="valid-lastname" class="valid-tooltip" >
+              Looks good!
+            </div>
+            <div id="invalid-lastname" class="valid-tooltip">
+              please enter valid name
+            </div>
+
+          </div>
+          <div class="col-md-6 position-relative">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+              <input type="text" class="form-control" id="username" aria-describedby="validationTooltipUsernamePrepend" required>
+              <div class="invalid-tooltip" id="invalid-username">
+                Please choose a unique and valid username.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 position-relative">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" required>
+            <div class="invalid-tooltip" id="invalid-city">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-6 position-relative">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select" id="state" required>
+              <option  value="none">none</option>
+<option value="AN">Andaman and Nicobar Islands</option>
+<option value="AP">Andhra Pradesh</option>
+<option value="AR">Arunachal Pradesh</option>
+<option value="AS">Assam</option>
+<option value="BR">Bihar</option>
+<option value="CH">Chandigarh</option>
+<option value="CT">Chhattisgarh</option>
+<option value="DN">Dadra and Nagar Haveli</option>
+<option value="DD">Daman and Diu</option>
+<option value="DL">Delhi</option>
+<option value="GA">Goa</option>
+<option value="GJ">Gujarat</option>
+<option value="HR">Haryana</option>
+<option value="HP">Himachal Pradesh</option>
+<option value="JK">Jammu and Kashmir</option>
+<option value="JH">Jharkhand</option>
+<option value="KA">Karnataka</option>
+<option value="KL">Kerala</option>
+<option value="LA">Ladakh</option>
+<option value="LD">Lakshadweep</option>
+<option value="MP">Madhya Pradesh</option>
+<option value="MH">Maharashtra</option>
+<option value="MN">Manipur</option>
+<option value="ML">Meghalaya</option>
+<option value="MZ">Mizoram</option>
+<option value="NL">Nagaland</option>
+<option value="OR">Odisha</option>
+<option value="PY">Puducherry</option>
+<option value="PB">Punjab</option>
+<option value="RJ">Rajasthan</option>
+<option value="SK">Sikkim</option>
+<option value="TN">Tamil Nadu</option>
+<option value="TG">Telangana</option>
+<option value="TR">Tripura</option>
+<option value="UP">Uttar Pradesh</option>
+<option value="UT">Uttarakhand</option>
+<option value="WB">West Bengal</option>
+</select>              
+            <div class="invalid-tooltip" id="invalid-state">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-6     position-relative">
+            <label for="zipcode" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zipcode" required>
+            <div class="invalid-tooltip" id="invalid-zip">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <div class="col-md-6     position-relative">
+            <label for="password" class="form-label">password</label>
+            <input type="password" class="form-control" id="password" required>
+            <div class="invalid-tooltip" id="valid-password">
+              Please provide a valid password.
+            </div>
+          </div>
+          <div class="col-md-6     position-relative">
+            <label for="confirm" class="form-label">confirm password</label>
+            <input type="password" class="form-control" id="confirm" required>
+            <div class="invalid-tooltip" id="invalid-confirm-password">
+              password and confirm password not maching
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary text-center" type="button" onclick="signup_validation()">sign up</button>
+          </div>
+        </form>
+  </div>
+
+      </div>
+    <!-----------------------------------------------------------------------login---------------------------------------------------->
+<div id="loginpage">
+  <div class="loginform">
+    <h1>Log-in</h1>
+      <form class="row  needs-validation" novalidate>
+        <div class="col-md-12 ">
+          <label for="validationTooltipUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="loginusername" aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+              Please choose a unique and valid username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label for="loginpassword" class="form-label">password</label>
+          <input type="password" class="form-control" id="loginpassword" required>
+          <div class="invalid-tooltip">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="button" onclick="loginpage()">login</button>
+        </div>
+      </form>
+  
+   
+</div>
+
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

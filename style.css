@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+}
+body{
+    position: relative;
+}
+nav{
+    background-color: rgb(146, 141, 134);
+    color: white;
+}
+    .zomato{
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        
+    }
+.section-1{
+    position: relative;
+}
+.section-1>img{
+    background-size: cover;
+    height:80vh;
+    width: 100vw;
+position: absolute;    
+}
+.zomatoimg > img {
+    width: 250px;
+    position: absolute;
+    top: 150px;
+    left: 290px;
+
+}
+.para{
+    position:absolute; 
+    color: white;
+    width: 600px;
+    font-size: 25px;
+    top: 250px;
+    left: 290px;
+}
+.footer{
+    position: absolute;
+    color: black;
+}
+.header hr{
+    width: 200px;
+    color: black;
+    
+}
+h2{
+    color: white;
+    
+}
+.valid-tooltip{
+    display: none;
+}
+.invalid-tooltip{
+    display: none;
+}
+.footer{
+    width: 100vw;
+    color:black;
+    margin-top:500px;
+    background-color: rgb(146, 141, 134);
+}
+.footer .footer-content{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#signuppage{
+    height: 80vh;
+    width:100vw;
+    position: absolute;
+    background: url(https://www.zomato.com/webroutes/zoomBackgrounds/downloadImage?title=Food);
+    background-size: cover;
+    display: none;
+
+}
+.forms{
+    position:absolute;
+    top: 100px;
+    left: 350px;
+    width: 500px;
+}
+#loginpage{
+    position: relative;
+    display: none;
+}
+.loginform{
+    height: 92vh;
+    width: 99vw;
+    position: absolute;
+    background: url(https://t3.ftcdn.net/jpg/04/17/77/78/360_F_417777825_v7o8RvkQhxpZkE0ZBD4xwzri5hGFHkO3.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.loginform h1{
+text-align: center;
+position: absolute;
+left: 695px;
+top: 70px;
+}
+.loginform form{
+    position: absolute;
+    width: 1200px;
+padding-top: 150px;
+padding-left: 450px;
+padding-right: 350px;
+left: 150px;
+}
